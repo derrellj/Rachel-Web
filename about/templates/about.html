@@ -1,0 +1,11 @@
+{% extends "_base.html" %} {% block content %}
+<div class="aboutContent">
+  {% for post in about %}
+
+  <p>{{ post.text }}</p>
+  <p>{{ post.file}}</p>
+  <img src="{{ post.image.url }}" />
+  {% endfor %}
+</div>
+
+{% endblock content %}
