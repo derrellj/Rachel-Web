@@ -4,7 +4,7 @@ from .models import AboutPost
 
 class AboutPostAdmin(admin.ModelAdmin):
     model = AboutPost
-    list_display = ("display_text", "file", "image")
+    list_display = ("display_text", "image")
 
     def display_text(self, obj):
         return obj.text[:50]

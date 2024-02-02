@@ -1,0 +1,9 @@
+{% extends "_base.html" %} {% block content %}
+<div class="serviceContainer">
+  {% for post in Service %}
+  <div class="sItem"><li>{{ post.name }}</li></div>
+  <div class="sItem"><li>{{ post.service }}</li></div>
+  <div class="sItem"><li>{{ post.price }}UGX</li></div>
+  {% endfor %}
+</div>
+{% endblock content %}

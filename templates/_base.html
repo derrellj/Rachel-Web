@@ -8,12 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="stylesheet" href="{% static 'css/pages.css' %}">
+        <link rel="stylesheet" href="{% static 'css/about.css' %}">
+        <link rel="stylesheet" href="{% static 'css/services.css' %}">
     </head>
     <nav class='navbar'>
         <li class='logo'><a class='linkLogo' href="{% url 'home' %}">Tynails</a></li>
         <ul class='listGroup'>
-            <li class='listItem'><a class='linkItem' href="#">Appointment</a></li>
-            <li class='listItem'><a class='linkItem' href="#">Services</a></li>
+            <li class='listItem'><a class='linkItem' href="{% url 'services:service' %}">Services</a></li>
             <li class='listItem'><a class='linkItem' href="{% url 'about:about' %}">About</a></li>
             <li class='listItem'><a class='linkItem' href="#">Location</a></li>
         </ul>
