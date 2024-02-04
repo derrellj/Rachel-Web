@@ -4,7 +4,7 @@
 <div class="box">
   {% for post in post_list %}
   <div class="boxItem">
-    <div><img src="{{ post.image.url }}" /></div>
+    <div><img class='pageImage' src="{{ post.image.url }}" /></div>
     <div><p class="content">{{ post.name }}</p></div>
     <div><p class="content">{{ post.about }}</p></div>
   </div>

@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "pages.apps.PagesConfig",
     "about.apps.AboutConfig",
     "services.apps.ServicesConfig",
+    "location.apps.LocationConfig",
+    "expense.apps.ExpenseConfig", 
 ]
 
 MIDDLEWARE = [

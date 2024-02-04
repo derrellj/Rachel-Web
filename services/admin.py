@@ -6,8 +6,8 @@ from .models import Service
 class SerivceAdmin(admin.ModelAdmin):
     model = Service
     list_display = [
-        "name",
         "service",
+        "name",
         "price",
     ]
 

@@ -16,4 +16,4 @@ class Service(models.Model):
 
     name = models.CharField(max_length=100)
     service = models.CharField(max_length=20, choices=SERVICE_CHOICES)
-    price = models.DecimalField(max_digits=5, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)

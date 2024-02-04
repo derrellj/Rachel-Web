@@ -12,11 +12,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='AboutPost',
+            name='Loc',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('text', models.TextField(max_length=3000)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='uploads/')),
+                ('text', models.TextField(blank=True)),
+                ('image', models.ImageField(blank=True, null=True, upload_to='uploads')),
             ],
         ),
     ]
