@@ -1,5 +1,5 @@
 .venv
 .git
 .gitignore
-rkey.pem
+
 .env
