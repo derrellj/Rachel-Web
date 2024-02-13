@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 from environs import Env
@@ -139,3 +138,14 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+os.environ["AWS_ACCESS_KEY_ID"] = os.environ.get("KEY_ID")
+os.environ["AWS_SECRET_ACCESS_KEY"] = os.environ.get("ACCESS_KEY")
+os.environ["AWS_STORAGE_BUCKET_NAME"] = os.environ.get("BUCKET_NAME")
+os.environ["AWS_S3_SIGNATURE_NAME"] = os.environ.get("SIGNATURE_NAME")
+os.environ["AWS_S3_REGION_NAME"] = os.environ.get("REGION_NAME")
+os.environ["AWS_S3_FILE_OVERWRITE"] = os.environ.get("FILE_OVERWRITE")
+os.environ["AWS_DEFAULT_ACL"] = os.environ.get("ACL")
+os.environ["AWS_S3_VERITY"] = os.environ.get("VERITY")
+os.environ["DEFAULT_FILE_STORAGE"] = os.environ.get("STORAGE")
